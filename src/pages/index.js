@@ -48,7 +48,9 @@ const IndexPage = ({ data }) => (
               <ul>
                 {configs.presskit_download_link && (
                   <li>
-                    <a href={configs.presskit_download_link}>Press Kit</a>
+                    <a href={configs.presskit_download_link}>
+                      Learn More About Nyxo
+                    </a>
                   </li>
                 )}
               </ul>
@@ -91,6 +93,7 @@ const IndexPage = ({ data }) => (
                 <video
                   className="screenvideo"
                   autoPlay="autoplay"
+                  loop={true}
                   controls="controls"
                 >
                   <source
@@ -165,11 +168,19 @@ const IndexPage = ({ data }) => (
                     <div>
                       <span className="fa-stack fa-1x">
                         <i className="iconBack fas fa-circle fa-stack-2x" />
-                        <i
-                          className={`iconTop fas fa-${
-                            feature.fontawesome_icon_name
-                          } fa-stack-1x`}
-                        />
+                        {feature.brand ? (
+                          <i
+                            className={`iconTop fab fa-${
+                              feature.fontawesome_icon_name
+                            } fa-stack-1x`}
+                          />
+                        ) : (
+                          <i
+                            className={`iconTop fas fa-${
+                              feature.fontawesome_icon_name
+                            } fa-stack-1x`}
+                          />
+                        )}
                       </span>
                     </div>
                     <div className="featureText">
@@ -184,13 +195,13 @@ const IndexPage = ({ data }) => (
           </div>
           <footer>
             <p className="footerText">
-              Made by{" "}
+              {/* Made by{" "}
               {configs.your_link ? (
                 <a href={configs.your_link}>{configs.your_name}</a>
               ) : (
                 `${configs.your_name}`
               )}
-              {configs.your_city && ` in ${configs.your_city}`}
+              {configs.your_city && ` in ${configs.your_city}`} */}
             </p>
             <div className="footerIcons">
               {configs.facebook_username && (
@@ -207,7 +218,9 @@ const IndexPage = ({ data }) => (
 
               {configs.linkedin_username && (
                 <a
-                  href={`https://www.linkedin.com/in/${configs.linkedin_username}`}
+                  href={`https://www.linkedin.com/in/${
+                    configs.linkedin_username
+                  }`}
                   aria-label="LinkedIn"
                 >
                   <span className="fa-stack fa-1x">
