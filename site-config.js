@@ -76,7 +76,8 @@ module.exports = {
     },
     {
       title: "Also for groups",
-      description: "",
+      description:
+        "At the same time as we release Nyxo Cloud, we will also be rolling out our new group features. Allowing companies to roll out Nyxo to their employees and get beautiful reports of employees' wellbeing.",
       fontawesome_icon_name: "users",
     },
   ],

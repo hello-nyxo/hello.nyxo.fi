@@ -93,6 +93,7 @@ const IndexPage = ({ data }) => (
                 <video
                   className="screenvideo"
                   autoPlay="autoplay"
+                  muted={true}
                   loop={true}
                   controls="controls"
                 >
