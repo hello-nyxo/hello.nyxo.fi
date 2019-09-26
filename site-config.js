@@ -2,7 +2,7 @@ module.exports = {
   // App Info
   appstore_link: "https://apps.apple.com/app/nyxo/id1440417031", // Enter App Store URL.
   playstore_link: "https://play.google.com/store/apps/details?id=fi.nyxo.app", // Enter Google Play Store URL.
-  google_analytics_ID: "UA-111729679-1", // Enter Google Analytics ID or ""
+  google_analytics_ID: "UA-111729679-2", // Enter Google Analytics ID or ""
   presskit_download_link: "https://nyxo.fi", // Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file).
   video_or_screenshot: "video", // "screenshot" or "video"
   app_url: "https://hello.nyxo.fi", // Domain of your website without path_prefix.
