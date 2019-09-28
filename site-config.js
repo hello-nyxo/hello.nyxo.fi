@@ -35,7 +35,7 @@ module.exports = {
     {
       title: "Built Together With Scientists",
       description:
-        "Nyxo Sleep Coaching program and its contents has been built developed together with the leading sleep researchers.",
+        "Nyxo Sleep Coaching program and its contents have developed together with the leading sleep researchers.",
       fontawesome_icon_name: "microscope",
     },
     {
